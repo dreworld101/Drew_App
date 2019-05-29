@@ -91,8 +91,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -296,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559136584310</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="3rd Work place xml 29/05">
+      <created>1559136955812</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1559136955812</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -334,7 +341,7 @@
   <component name="ToolWindowManager">
     <frame x="17" y="42" width="1346" height="688" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990991" visible="true" weight="0.1726283" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990991" visible="true" weight="0.17496112" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -374,7 +381,8 @@
     <MESSAGE value=" 2nd sign_up &amp; view property commit" />
     <MESSAGE value="Work place xml 29/05" />
     <MESSAGE value="2nd Work place xml 29/05" />
-    <option name="LAST_COMMIT_MESSAGE" value="2nd Work place xml 29/05" />
+    <MESSAGE value="3rd Work place xml 29/05" />
+    <option name="LAST_COMMIT_MESSAGE" value="3rd Work place xml 29/05" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
