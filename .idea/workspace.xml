@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5fa875b-04b0-40a1-a551-f45e9cec0ba1" name="Default Changelist" comment=" 2nd sign_up &amp; view property commit">
+    <list default="true" id="b5fa875b-04b0-40a1-a551-f45e9cec0ba1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ZooplaAutoTest.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,7 +47,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/feature/view_property.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-132">
+            <state>
               <caret column="18" selection-start-column="18" selection-end-column="18" />
             </state>
           </provider>
@@ -93,8 +92,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -285,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555102465582</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Work place xml 29/05">
+      <created>1559136259868</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1559136259868</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -323,7 +329,7 @@
   <component name="ToolWindowManager">
     <frame x="17" y="42" width="1346" height="688" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990991" visible="true" weight="0.16796267" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990991" visible="true" weight="0.17029549" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -361,7 +367,8 @@
     <MESSAGE value="to_rent 2nd commit" />
     <MESSAGE value="sign_up &amp; view property commit" />
     <MESSAGE value=" 2nd sign_up &amp; view property commit" />
-    <option name="LAST_COMMIT_MESSAGE" value=" 2nd sign_up &amp; view property commit" />
+    <MESSAGE value="Work place xml 29/05" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work place xml 29/05" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -449,7 +456,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/feature/view_property.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
+        <state>
           <caret column="18" selection-start-column="18" selection-end-column="18" />
         </state>
       </provider>
