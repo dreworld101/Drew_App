@@ -3,7 +3,7 @@ Feature: Property For sale
   Background:
     Given User is on the home page of "zoopla website"
 
-
+  @Drew
   Scenario Outline: Property for sale
     When User enter post code in the "<searchlocation>"
     And click the "search button"
@@ -11,7 +11,7 @@ Feature: Property For sale
     Examples:
       | searchlocation |
       | EN10 6FH       |
-
+  @Drew
   Scenario: Property for Sale Validate Min Price
     When User click on min price drop down button
     Then The page displays "min prices"
@@ -26,7 +26,7 @@ Feature: Property For sale
     When User click on property type drop down button
     Then The page displays "property types"
 
-
+  @Drew
   Scenario: Property for sale Validate bedrooms
     When User click on bedrooms drop down button
     Then The page displays "bedrooms"
