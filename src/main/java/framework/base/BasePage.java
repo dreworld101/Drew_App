@@ -3,6 +3,8 @@ package framework.base;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
@@ -52,11 +54,14 @@ public class BasePage extends Base {
     {
         driver.findElement(utility_rent_to_rent_lnk).click();
     }
-    public static void setSearchLocation(String SearchLocation){
+    public static void setSearchLocation(String SearchLocation)
+    {
+        //new WebDriverWait(driver, 120).until(ExpectedConditions.presenceOfElementLocated(utility_rent_search_location_txt)).sendKeys(SearchLocation);
         driver.findElement(utility_rent_search_location_txt).sendKeys(SearchLocation);
     }
     public static void setMinPrice()
     {
+
         driver.findElement(utility_rent_min_price_drp).click();
     }
     public static void setMaxPrice(){

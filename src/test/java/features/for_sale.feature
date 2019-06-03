@@ -11,6 +11,7 @@ Feature: Property For sale
     Examples:
       | searchlocation |
       | EN10 6FH       |
+
   @Drew
   Scenario: Property for Sale Validate Min Price
     When User click on min price drop down button
@@ -26,12 +27,12 @@ Feature: Property For sale
     When User click on property type drop down button
     Then The page displays "property types"
 
-  @Drew
+
   Scenario: Property for sale Validate bedrooms
     When User click on bedrooms drop down button
     Then The page displays "bedrooms"
 
-
+  @Drew
   Scenario Outline: Property for sale and select Options
     When User enter post code in the "<searchlocation>"
     And Enter "<minprice>", "<maxprice>", "<propertytype>", "<bedrooms>"
@@ -39,5 +40,5 @@ Feature: Property For sale
     Then The page displays properties for sale
     Examples:
       | searchlocation | minprice | maxprice | propertytype | bedrooms |
-      | N3 2HT         | £10,000  | £950,000 | FLAT         | 3        |
+      | N3 2HT         | 10,000   | 950,000  | FLAT         | 3        |
 

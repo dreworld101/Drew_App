@@ -2,7 +2,7 @@ Feature: Login
 
   Background:
     Given User is on the home page of "zoopla website"
-
+  @Drew
   Scenario Outline: Login with remember me
     When User click on the "signin button"
     And Enters "<emailaddress>" and "<password>"
@@ -11,7 +11,7 @@ Feature: Login
     Examples:
       | emailaddress         | password  |
       | omo_andy4u@yahoo.com | andrew123 |
-
+  @Drew
   Scenario Outline: Login with existing account
     When User click on the "signin button"
     And Enters "<emailaddress>" and "<password>"
@@ -22,7 +22,7 @@ Feature: Login
       | emailaddress         | password  |
       | omo_andy4u@yahoo.com | andrew123 |
 
-
+  @Drew
   Scenario Outline: Forgotten password
     When User click on the "signin button"
     And Click on "forgotten your password" link

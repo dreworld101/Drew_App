@@ -3,7 +3,7 @@ Feature: View Home
   Background:
     Given User is on the home page of "zoopla website"
 
-
+  @Drew
   Scenario Outline: View property in my Area
     When User click on the "view my home" button
     And Enters "<postcode>" and click on locate address
@@ -14,6 +14,7 @@ Feature: View Home
       | N3 2HT   |
       | EN10 6FH |
 
+
   Scenario Outline: View property relationship type
     When User click on the "view my home" button
     And Enters "<postcode>" and click on locate address
@@ -23,7 +24,7 @@ Feature: View Home
       | postcode | address                         |
       | N3 2HT   | 20 Oakfield Road, London N3 2HT |
 
-
+  @Drew
   Scenario Outline: Select home owner as relationship status
     When User click on the "view my home" button
     And Enters "<postcode>" and click on locate address
