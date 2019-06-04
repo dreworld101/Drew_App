@@ -3,7 +3,7 @@ Feature: Register
   Background:
     Given User is on the home page of "zoopla website"
 
-  @Drew
+
   Scenario Outline: Registration include marketing preference
     When User click on the "signin button"
     And Click on the "register" link

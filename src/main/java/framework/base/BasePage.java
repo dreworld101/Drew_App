@@ -17,6 +17,7 @@ public class BasePage extends Base {
     private static By utility_view_my_home_navigation_menu = By.cssSelector("a[href='/property/track']");
 
     private static By utility_sign_in_navigation_menu = By.cssSelector("a[href='/signin/']");
+    //private static By utility_sign_in_navigation_menu = By.xpath("//*[@id=\"main-nav\"]/ul[1]/li[3]/a");
 
     private static By utility_rent_to_rent_lnk = By.id("search-tabs-to-rent");
     private static By utility_rent_search_location_txt = By.id("search-input-location");
@@ -31,8 +32,14 @@ public class BasePage extends Base {
     private static By utility_search_home_select_address_submit_btn = By.xpath("//*[@id=\"lookup\"]/button");
     private static By utility_search_home_select_address_drp = By.id("address-list");
     private static By utility_search_home_relationship_to_this_home_header = By.className("pdp-dialog__content-title");
+    //private static By utility_search_home_relationship_to_this_home_header = By.cssSelector("pdp-dialog__header pdp-relationship__header");
+
     private static By utility_search_home_relationship_to_this_home_btn = By.xpath("//*[@id=\"property-relationship\"]/div/label[1]");
+    //private static By utility_search_home_relationship_to_this_home_btn = By.id("relationship-owner");
+
     private static By utility_search_home_my_property_details_header = By.xpath("//*[@id=\"main-content\"]/div[1]/div/div[1]/div/p");
+    //private static By utility_search_home_my_property_details_header = By.xpath("//*[@id=\"property-relationship\"]/div");
+
     private static By utility_sale_property_for_sale_in_this_area_header = By.xpath("//*[@id=\"content\"]/div[1]/h1");
     private static By utility_sale_min_price_drp = By.id("forsale_price_min");
     private static By utility_sale_max_price_drp = By.id("forsale_price_max");
@@ -45,10 +52,12 @@ public class BasePage extends Base {
     public static void setViewMyHome(){
 
         driver.findElement(utility_view_my_home_navigation_menu).click();
-    }
+        //new WebDriverWait(driver, 120).until(ExpectedConditions.elementToBeClickable(utility_view_my_home_navigation_menu)).click();
+}
     public static void setSignIn(){
 
         driver.findElement(utility_sign_in_navigation_menu).click();
+        //new WebDriverWait(driver, 60).until(ExpectedConditions.elementToBeClickable(utility_sign_in_navigation_menu)).click();
     }
     public static void setToRent()
     {
@@ -145,7 +154,10 @@ public class BasePage extends Base {
         driver.findElement(utility_search_home_select_address_drp).sendKeys(address);
     }
     public static void setRelationshipHomeStatus(){
+        //driver.switchTo().frame("lightningjs-frame-usabilla_live");
         driver.findElement(utility_search_home_relationship_to_this_home_btn).click();
+        //new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(utility_search_home_relationship_to_this_home_btn)).click();
+
     }
     public static String getMyHomePropertyDetails(){
         WebElement header = driver.findElement(utility_search_home_my_property_details_header);

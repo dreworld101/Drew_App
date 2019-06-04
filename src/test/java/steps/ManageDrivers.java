@@ -58,7 +58,7 @@ public class ManageDrivers {
             System.setProperty( "webdriver.chrome.driver", CHROME_BROWSER_PATH);
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments( "--headless" );
-            driver = new ChromeDriver(chromeOptions);
+            driver = new ChromeDriver();
 
         } else if (p.getProperty("browser").contains( "ie" ))
 
@@ -82,7 +82,7 @@ public class ManageDrivers {
         //Running test headlessly with @after method active impacts overall performance
         //Deactivate method before pushing code and set browser to headless in global properties
         driver.manage().deleteAllCookies();
-        //driver.close();
+        driver.close();
     }
 
 

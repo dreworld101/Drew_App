@@ -5,6 +5,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import framework.base.BasePage;
 
+import static framework.base.DriverContext.driver;
 import static org.junit.Assert.assertEquals;
 
 public class ViewHome {
@@ -46,6 +47,8 @@ public class ViewHome {
         String header = BasePage.getRelationshipToThisHomeHeader();
         System.out.println(BasePage.getRelationshipToThisHomeHeader());
         assertEquals(header, BasePage.getRelationshipToThisHomeHeader());
+
+
 
     }
 
