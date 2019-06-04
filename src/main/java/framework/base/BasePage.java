@@ -2,6 +2,7 @@ package framework.base;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -37,8 +38,8 @@ public class BasePage extends Base {
     private static By utility_search_home_relationship_to_this_home_btn = By.xpath("//*[@id=\"property-relationship\"]/div/label[1]");
     //private static By utility_search_home_relationship_to_this_home_btn = By.id("relationship-owner");
 
-    private static By utility_search_home_my_property_details_header = By.xpath("//*[@id=\"main-content\"]/div[1]/div/div[1]/div/p");
-    //private static By utility_search_home_my_property_details_header = By.xpath("//*[@id=\"property-relationship\"]/div");
+    //private static By utility_search_home_my_property_details_header = By.xpath("//*[@id=\"main-content\"]/div[1]/div/div[1]/div/p");
+    private static By utility_search_home_my_property_details_header = By.xpath("//*[@id=\"property-relationship\"]/div/label[1]");
 
     private static By utility_sale_property_for_sale_in_this_area_header = By.xpath("//*[@id=\"content\"]/div[1]/h1");
     private static By utility_sale_min_price_drp = By.id("forsale_price_min");
@@ -155,7 +156,10 @@ public class BasePage extends Base {
     }
     public static void setRelationshipHomeStatus(){
         //driver.switchTo().frame("lightningjs-frame-usabilla_live");
-        driver.findElement(utility_search_home_relationship_to_this_home_btn).click();
+
+        WebElement homestatus = driver.findElement(utility_search_home_relationship_to_this_home_btn);
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].click();",homestatus);
         //new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(utility_search_home_relationship_to_this_home_btn)).click();
 
     }

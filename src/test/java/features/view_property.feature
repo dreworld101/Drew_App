@@ -24,7 +24,7 @@ Feature: View Home
       | postcode | address                         |
       | N3 2HT   | 20 Oakfield Road, London N3 2HT |
 
-  @Drew
+  @Drew1
   Scenario Outline: Select home owner as relationship status
     When User click on the "view my home" button
     And Enters "<postcode>" and click on locate address

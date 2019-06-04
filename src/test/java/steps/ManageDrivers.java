@@ -1,8 +1,8 @@
 package steps;
 
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import framework.config.ConfigReader;
-import org.junit.After;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -58,7 +58,7 @@ public class ManageDrivers {
             System.setProperty( "webdriver.chrome.driver", CHROME_BROWSER_PATH);
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments( "--headless" );
-            driver = new ChromeDriver();
+            driver = new ChromeDriver(chromeOptions);
 
         } else if (p.getProperty("browser").contains( "ie" ))
 
